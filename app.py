@@ -10,7 +10,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🥭 Fresh vs Rotten Mango Classifier")
+st.title("Fresh vs Rotten Mango Classifier")
 st.markdown("Upload an image of a mango to check whether it is **Fresh** or **Rotten**.")
 
 # Cache the model to ensure fast loading on Streamlit Cloud
