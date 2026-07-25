@@ -10,13 +10,13 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("Fresh vs Rotten Mango Classifier")
+st.title("🥭 Fresh vs Rotten Mango Classifier")
 st.markdown("Upload an image of a mango to check whether it is **Fresh** or **Rotten**.")
 
 # Cache the model to ensure fast loading on Streamlit Cloud
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('mango_classifier.h5')
+    model = tf.keras.models.load_model('get324_ee7.ipynb')
     return model
 
 model = load_model()
