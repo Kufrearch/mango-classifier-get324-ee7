@@ -16,8 +16,7 @@ st.markdown("Upload an image of a mango to check whether it is **Fresh** or **Ro
 # Cache the model to ensure fast loading on Streamlit Cloud
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('get324_ee7.ipynb')
-    return model
+    return tf.keras.models.load_model('mango_classifier.h5')
 
 model = load_model()
 
@@ -27,7 +26,7 @@ uploaded_file = st.file_uploader("Choose a mango image...", type=["jpg", "jpeg",
 if uploaded_file is not None:
     # Display the uploaded image
     image = Image.open(uploaded_file).convert('RGB')
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
     
     st.info("Analyzing image quality...")
     
@@ -35,19 +34,21 @@ if uploaded_file is not None:
     size = (224, 224)
     image_resized = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
     img_array = np.asarray(image_resized) / 255.0
-    img_reshape = np.expand_axis(img_array, axis=0)
+    
+    # Fixed typo: np.expand_dims instead of np.expand_axis
+    img_reshape = np.expand_dims(img_array, axis=0)
     
     # Model Prediction
     prediction = model.predict(img_reshape)
     confidence = float(prediction[0][0])  # Output between 0.0 and 1.0
     
-    # Class Mapping: 0 -> Fresh, 1 -> Rotten
+    # Class Mapping: Class 0 -> Fresh, Class 1 -> Rotten
     if confidence > 0.5:
         score = confidence * 100
-        st.error(f"### Prediction: Rotten Mango 🛑")
+        st.error("### Prediction: Rotten Mango 🛑")
         st.write(f"**Confidence Score:** {score:.2f}%")
     else:
-        score = (1 - confidence) * 100
-        st.success(f"### Prediction: Fresh Mango ✅")
+        score = (1.0 - confidence) * 100
+        st.success("### Prediction: Fresh Mango ✅")
         st.write(f"**Confidence Score:** {score:.2f}%")
-  
+                       
