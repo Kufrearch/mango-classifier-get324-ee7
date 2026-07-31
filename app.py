@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for modern styling
+# CSS for styling
 st.markdown("""
     <style>
     /* Main container background & typography */
