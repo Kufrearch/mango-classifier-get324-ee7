@@ -7,6 +7,6 @@ UDOM, VICTOR ISRAEL - Recommended creating a clean dataset structure by splittin
 AKPAN, WISDOM NDUESO 
 OGUNBIYI PRAISE - Discovered the Out-of-Distribution (OOD) issue when uploading non-mango items (like books) and noted the false positive behavior.
 Anthony Benedicta Chinonso - Verified the repository file arrangement to ensure .devcontainer, app.py, mango_classifier.h5, and requirements.txt were structured correctly.
-
+OKON SAMUEL ITA - Recommended using @st.cache_resource in the Streamlit code to stop the model from reloading on every user click.
 
 
