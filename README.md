@@ -11,7 +11,7 @@ An end-to-end deep learning web application built for automated mango quality as
 ## Live Web Application
 
 Access the operational Streamlit Cloud application directly here:  
-👉 **[Mango Classifier Web App Link](https://mango-classifier-get324-ee7-7hebjh7dsst3dftfqjgn3r.streamlit.app/)**
+**[Mango Classifier Web App Link](https://mango-classifier-get324-ee7-7hebjh7dsst3dftfqjgn3r.streamlit.app/)**
 
 ---
 
