@@ -91,7 +91,7 @@ st.markdown("Automated binary classification of mango fruit quality using deep n
 
 # Usage & OOD Warning Banner
 st.notice = st.warning(
-    "💡 **Usage Notice:** This deep learning model is strictly trained for **Mango Image Classification**. "
+    "**Usage Notice:** This deep learning model is strictly trained for **Mango Image Classification**. "
     "Uploading non-mango objects (e.g., books, furniture, other fruits) will yield non-meaningful predictions due to model boundary constraints."
 )
 
