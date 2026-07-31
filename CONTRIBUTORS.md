@@ -6,7 +6,7 @@ USORO, UBONGABASI ISONGUYO - 5Suggested adding a clear UI disclaimer/warning ban
 UDOM, VICTOR ISRAEL - Recommended creating a clean dataset structure by splitting mango images strictly into Fresh and Rotten folders.
 AKPAN, WISDOM NDUESO 
 OGUNBIYI PRAISE - Discovered the Out-of-Distribution (OOD) issue when uploading non-mango items (like books) and noted the false positive behavior.
-
+Anthony Benedicta Chinonso - Verified the repository file arrangement to ensure .devcontainer, app.py, mango_classifier.h5, and requirements.txt were structured correctly.
 
 
 
