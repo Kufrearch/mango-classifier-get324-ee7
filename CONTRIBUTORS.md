@@ -1,4 +1,4 @@
-Archibong, Kufre Ini - 1
+ARCHIBONG, KUFRE INI - Repo management and model training.
 Etim, David Emmanuel - 2
 sampson, Abasifreke sampson - Identified the Keras/TensorFlow version mismatch error when the app failed to load on Streamlit Cloud.
 Inyang, Obongama Ekpong - 4
