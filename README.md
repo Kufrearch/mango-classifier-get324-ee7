@@ -1,21 +1,36 @@
 # 🥭 Fresh vs Rotten Mango Classifier
 
-An end-to-end Computer Vision web application built with **Streamlit** and **TensorFlow (MobileNetV2)** that classifies uploaded mango images as either **Fresh** or **Rotten**.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mango-classifier-get324-ee7-7hebjh7dsst3dftfqjgn3r.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16+-orange.svg)
 
-Developed by **Group EE7** for GET324.
-
----
-
-## Features
-* **Deep Learning Powered:** Built on a fine-tuned MobileNetV2 architecture trained on 29,000+ images (~93% validation accuracy).
-* **Instant Inference:** Lightweight image preprocessing pipeline (`224x224` resolution).
-* **Interactive UI:** Built using Streamlit for clean image upload and real-time confidence scoring.
+An end-to-end deep learning web application built for automated mango quality assessment. Developed as part of the **GET324 Mini-Project (Group EE7)** course deliverables.
 
 ---
 
-## Project Structure
+## Live Web Application
+
+Access the operational Streamlit Cloud application directly here:  
+👉 **[Mango Classifier Web App Link](https://mango-classifier-get324-ee7-7hebjh7dsst3dftfqjgn3r.streamlit.app/)**
+
+---
+
+## Project Overview
+
+This repository houses a fine-tuned binary vision classifier utilizing **MobileNetV2** transfer learning. The system evaluates input mango images and classifies them into two quality states:
+* **Fresh:** Healthy, ripe, or undamaged mangoes.
+* **Rotten:** Degraded, damaged, or decaying mangoes.
+
+The web app presents real-time predictions alongside visual diagnostic reports and confidence metrics.
+
+---
+
+## Repository Structure
+
 ```text
-├── app.py                  # Streamlit frontend & inference logic
-├── mango_classifier.h5     # Trained Keras model weights
-├── requirements.txt        # Production dependencies
-└── README.md               # Project documentation
+├── .devcontainer/       # Container configurations for isolated development environments
+├── CONTRIBUTORS.md     # Group members, and technical contributions
+├── README.md           # Master project documentation and application guide
+├── app.py              # Streamlit application entry point and user interface code
+├── mango_classifier.h5 # Trained MobileNetV2 model binary (HDF5 format)
+└── requirements.txt    # Python runtime environment dependencies
