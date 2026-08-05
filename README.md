@@ -23,6 +23,32 @@ This repository houses a fine-tuned binary vision classifier utilizing **MobileN
 
 The web app presents real-time predictions alongside visual diagnostic reports and confidence metrics.
 
+## Group Members
+
+1. Archibong, Kufre Ini — 22/EG/EE/2103
+
+2. Usoro, Ubongabasi Isonguyo — 22/EG/EE/1963
+
+3. Udom, Victor Israel — 22/EG/EE/2043
+
+4. Ekwebelem, Chibueze Princewill — 22/EG/EE/2053
+
+5. David, Israel Akpanumoh — 22/EG/EE/2073
+
+6. Sampson, Abasifreke Sampson — 22/EG/EE/1983
+
+7. Ogunbiyi, Praise Ayodele — 22/EG/EE/2033
+
+8. Okon, Samuel Ita — 22/EG/EE/1973
+
+9. Etim, David Emmanuel — 22/EG/EE/1993
+
+10. Inyang, Obongama Ekpong — 22/EG/EE/2083
+
+11. Wisdom Ndueso Akpan — 22/EG/EE/2023
+
+12. Nsikan, Saviour Ebenezer — 22/EG/EE/2003
+
 ---
 
 ## Repository Structure
